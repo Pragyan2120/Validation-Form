@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>From|Validation</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+  <form class="form" action="#">
+    <div class="container">
+      <h1 class="heading">Form Validation </h1>
+      <div class="content">
+        <div class="label">
+          <label for="">First Name</label>
+        </div>
+        <div class="text">
+          <input type="text" name="" value="" id="naam" onblur="firstName()" autocomplete="off" placeholder="eg.Pragyan">
+          <span id="err1"></span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="label">
+          <label for="">Last Name</label>
+        </div>
+        <div class="text">
+          <input type="text" name="" value="" id='lnaam' onblur="lastName()"  autocomplete="off" placeholder="eg.sahu">
+          <span id="err2"></span>
+        </div>
+
+      </div>
+      <div class="content">
+        <div class="label">
+          <label for="">E-mail id</label>
+        </div>
+        <div class="text">
+          <input type="email" name="" value="" id="mail" onblur="email()"  autocomplete="off" placeholder="eg.hello.pp@gmail.com">
+          <span id="err3"></span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="label">
+          <label for="">Phone-no</label>
+        </div>
+        <div class="text">
+          <input type="tel" name="" value="" id="phn" onblur="phnno()"  autocomplete="off" placeholder="eg.1234567890">
+          <span id="err4"></span>
+        </div>
+      </div>
+
+
+      <div class="content">
+        <div class="label">
+          <label for="">Message</label>
+        </div>
+        <div class="text">
+          <textarea name="name" rows="6" cols="22" id="msg" onblur="messagecontent()"  autocomplete="off" placeholder="Enter your message"></textarea>
+        <span id="err5"></span>
+        </div>
+        <span id="err5"></span>
+      </div>
+
+      <div class="content">
+        <button type="submit" name="button" class="submit" onclick="Validation()">Submit</button>
+        <button type="reset" name="button">Reset</button>
+      </div>
+
+    </div>
+  </form>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
